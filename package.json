@@ -1,7 +1,7 @@
 {
   "name": "number-system",
   "version": "1.0.0",
-  "description": "Converts YouTube stats from indian number system to international number system",
+  "description": "Converts YouTube stats that are displayed in indian number system to international number system",
   "main": "index.js",
   "scripts": {
     "build": "webpack",
