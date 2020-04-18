@@ -5,10 +5,7 @@
     "description": "Converts YouTube stats that are displayed in indian number system to international number system",
     "author": "Nishkal",
     "content_scripts": [{
-        "matches": ["*://*/*"],
-        "include_globs": [
-            "*://*.youtube.com/*"
-        ],
+        "matches": ["https://*.youtube.com/*"],
         "js": ["bundle.js"]
     }],
     "permissions": ["https://youtube.com/*", "activeTab"]
