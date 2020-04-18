@@ -1,7 +1,7 @@
 {
   "name": "number-system",
   "version": "1.0.0",
-  "description": "",
+  "description": "Converts YouTube stats from indian number system to international number system",
   "main": "index.js",
   "scripts": {
     "build": "webpack",
@@ -9,7 +9,7 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.9.0",
