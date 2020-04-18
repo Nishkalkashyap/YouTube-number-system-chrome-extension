@@ -2,7 +2,6 @@
     "manifest_version": 2,
     "name": "YouTube International number system",
     "version": "1.0.0",
-    "default_locale": "en",
     "description": "Converts indian number system to international number system on YouTube",
     "author": "Nishkal",
     "content_scripts": [

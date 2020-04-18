@@ -10,6 +10,7 @@ module.exports = {
         path: path.resolve(__dirname, './dist'),
     },
     mode: 'production',
+    target: 'web',
     plugins: [
         new CopyPlugin([
             {
