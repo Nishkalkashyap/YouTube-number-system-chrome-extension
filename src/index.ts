@@ -3,7 +3,7 @@ import numeral from 'numeral';
 const ONE_LAKH = 100000;
 const ONE_CRORE = 100 * ONE_LAKH;
 
-setInterval(()=>{
+setInterval(() => {
     restoreSanity();
 }, 3000);
 
