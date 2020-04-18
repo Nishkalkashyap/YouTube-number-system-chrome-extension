@@ -11,6 +11,15 @@ module.exports = {
     },
     mode: 'production',
     target: 'web',
+    module: {
+        rules: [
+            {
+                test: /\.(js|ts)x?$/i,
+                exclude: /node_modules/,
+                use: 'babel-loader'
+            }
+        ]
+    },
     plugins: [
         new CopyPlugin([
             {
