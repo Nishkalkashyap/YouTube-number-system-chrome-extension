@@ -4,12 +4,10 @@
     "version": "1.0.0",
     "description": "Converts indian number system to international number system on YouTube",
     "author": "Nishkal",
-    "content_scripts": [
-        {
-            "matches": [
-                "https://youtube.com/*"
-            ],
-            "js": ["bundle.js"]
-        }
-    ]
+    "content_scripts": [{
+        "matches": [
+            "<all_urls>"
+        ],
+        "js": ["bundle.js"]
+    }]
 }
