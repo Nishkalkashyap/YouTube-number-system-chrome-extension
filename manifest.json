@@ -10,7 +10,7 @@
             "matches": [
                 "https://youtube.com/*"
             ],
-            "js": ["content.js"]
+            "js": ["bundle.js"]
         }
     ]
 }
