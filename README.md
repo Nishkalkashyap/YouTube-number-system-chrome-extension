@@ -13,6 +13,7 @@ To develop the extension locally, run:
 ## Build
 To build the extension, run:
 1. `npm run build`
+2. `npm run zip`
 
 ## License
 MIT
