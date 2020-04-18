@@ -1,15 +1,7 @@
 import numeral from 'numeral';
 
-declare const chrome: any;
-console.log('Hello YouTube world');
-
 const ONE_LAKH = 100000;
 const ONE_CRORE = 100 * ONE_LAKH;
-
-window.onpopstate = () => {
-    console.log("EXTENSION RAN AGAIN");
-    restoreSanity();
-}
 
 setInterval(()=>{
     restoreSanity();
@@ -18,7 +10,7 @@ setInterval(()=>{
 restoreSanity();
 
 function restoreSanity() {
-    console.time('RESTORE_SANITY');
+    // console.time('RESTORE_SANITY');
     const rootItems = document.querySelectorAll("#metadata-line > span:nth-child(1)");
     const searchListItems = document.querySelectorAll("#metadata-line > span:nth-child(1)");
     const videoSuggestions = document.querySelectorAll("#metadata-line > span:nth-child(1)");
@@ -38,7 +30,7 @@ function restoreSanity() {
         const text = el.innerText;
         el.innerText = parseRawText(text);
     });
-    console.timeEnd('RESTORE_SANITY');
+    // console.timeEnd('RESTORE_SANITY');
 }
 
 function parseRawText(text: string) {
@@ -51,5 +43,3 @@ function parseRawText(text: string) {
     const formattedText = numeral(inNumbers).format('0.0 a').toUpperCase().replace(/(\s|\.0)/gi, '');
     return formattedText;
 }
-
-// console.log(itemsToChange.length);
