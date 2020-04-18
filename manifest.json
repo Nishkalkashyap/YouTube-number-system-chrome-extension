@@ -2,7 +2,7 @@
     "manifest_version": 2,
     "name": "YouTube International number system",
     "version": "1.0.0",
-    "description": "onverts YouTube stats that are displayed in indian number system to international number system",
+    "description": "Converts YouTube stats that are displayed in indian number system to international number system",
     "author": "Nishkal",
     "content_scripts": [{
         "matches": ["*://*/*"],
@@ -11,5 +11,5 @@
         ],
         "js": ["bundle.js"]
     }],
-    "permissions": ["https://youtube.com/*"]
+    "permissions": ["https://youtube.com/*", "activeTab"]
 }
