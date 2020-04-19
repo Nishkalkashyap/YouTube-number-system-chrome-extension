@@ -16,8 +16,9 @@ function restoreSanity() {
     const searchListItems = document.querySelectorAll("#metadata-line > span:nth-child(1)");
     const videoSuggestions = document.querySelectorAll("#metadata-line > span:nth-child(1)");
     const likes = document.getElementsByTagName("yt-formatted-string");
+    const subscriberSearchCount = document.querySelector("#subscribers")
 
-    const allItems = [...rootItems, ...searchListItems, ...videoSuggestions, ...likes];
+    const allItems = [...rootItems, ...searchListItems, ...videoSuggestions, ...likes, subscriberSearchCount];
 
     const itemsToChange = allItems.filter((item) => {
         const el: HTMLElement = item as any;
