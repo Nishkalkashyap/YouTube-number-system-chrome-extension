@@ -20,12 +20,15 @@ function restoreSanity() {
 
     const allItems = [...rootItems, ...searchListItems, ...videoSuggestions, ...likes, subscriberSearchCount];
 
-    const itemsToChange = allItems.filter((item) => {
-        const el: HTMLElement = item as any;
-        return (!!el.innerText.match(/(crore|lakh)/i) || el.innerText == '0')
-    }).filter((item, index, arr) => {
-        return arr.indexOf(item) == index;
-    });
+    const itemsToChange = allItems
+        .filter((item) => !!item)
+        .filter((item) => {
+            const el: HTMLElement = item as any;
+            return (!!el.innerText.match(/(crore|lakh)/i) || el.innerText == '0')
+        })
+        .filter((item, index, arr) => {
+            return arr.indexOf(item) == index;
+        });
 
     itemsToChange.map((item) => {
         const el: HTMLElement = item as any;

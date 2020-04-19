@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "YouTube International number system",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Converts YouTube stats that are displayed in indian number system to international number system",
     "author": "Nishkal",
     "content_scripts": [{
